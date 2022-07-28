@@ -1,7 +1,5 @@
-import Link from 'next/link'
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
-import styles from '../styles/navbar.module.scss'
 
 
 export default function Navbar() {
