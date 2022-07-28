@@ -76,7 +76,7 @@ export default function Footer(props) {
             </div>
             <div className="text-center p-4" style={{backgroundColor: 'rgba(0, 0, 0, 0.2)'}}>
                 © 2021 Toate drepturile reservate:
-                <a className="text-white" href="https://RapidMobil.md/"> NOI</a>
+                <a className="text-white" href=""> NOI</a>
             </div>
         </footer>
     );
