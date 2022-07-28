@@ -20,7 +20,7 @@ export default function Navbar() {
             <div className="pl-4">
                 <Link href="/">
                     {/*<Image src="/img.png" width="100px" height="70px"/>*/}
-                    <a className="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl">“RapidMobil”</a>
+                    <a className="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl">“MOLDOVA”</a>
                 </Link>
             </div>
 

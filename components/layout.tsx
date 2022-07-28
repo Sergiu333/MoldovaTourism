@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     return (
         <>
             <Head>
-                <title>“RepidMobil” - Association</title>
+                <title>MOLDOVA</title>
                 <meta property="og:title" content="My page title" key="title" />
                 <meta charSet="UTF-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
