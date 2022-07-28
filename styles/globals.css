@@ -1,26 +1,68 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#progress {
+    background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+.text-hero {
+    text-align: center;
+    font-family: "Vidaloka",Sans-serif;
+    font-size: 35px;
+
 }
 
-* {
-  box-sizing: border-box;
+#map {
+    height: 586px;
+    width: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
+.Container {
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 50px 0px;
+    margin-top: 100px;
+
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+
+
+}
+
+.gallery a {
+    height: 200px;
+    width: 300px;
+
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 5px #000;
+}
+
+.gallery a img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery a img:hover {
+    transform: scale(1.04);
+}
+
+.title {
+    background: #AA210F;
+    height: 55px;
+    text-align: center;
+    font-size: 40px;
     color: white;
-    background: black;
-  }
+
+
 }
