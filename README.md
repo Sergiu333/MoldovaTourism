@@ -1,10 +1,10 @@
 # MoldovaTourism
 this website will present the popular places for tourists
 
-npm install
+yarn install
 
 npm install -g sass
 
-yarn install
+npm install
 
 yarn next dev
