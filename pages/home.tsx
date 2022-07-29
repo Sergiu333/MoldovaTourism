@@ -6,9 +6,7 @@ export default function Home(props) {
         <div>
             <style jsx>
                 {`
-                   svg{
-                    gap: 20px;
-                    }
+                 
                 `}
             </style>
             <div className={'container mx-auto'}>
