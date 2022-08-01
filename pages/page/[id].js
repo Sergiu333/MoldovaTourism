@@ -1,6 +1,7 @@
 import {useRouter} from 'next/router'
 import Link from "next/link";
 import DistrictContent from "../../components/districtContent";
+import TouristicsPlaces from "../../components/touristicsPlaces";
 
 export default function () {
     const {query} = useRouter();
@@ -49,6 +50,25 @@ export default function () {
         {id: 35, nr: "MD-TE", title: "telenesti", description: "ceva "},
         {id: 36, nr: "MD-UN", title: "ungheni", description: "ceva "},
     ];
+
+    let Places = [
+        {id:0, title:"", subTitle:"", description:"", image:"" },
+        {
+            id:1,
+            title:"Mimi Castle, Anenii Noi",
+            subTitle:"Mimi Castle",
+            description:"At Castel Mimi we are proud of our position as one of the top wine producers and tourist destinations in Moldova.",
+            image:"https://lh5.googleusercontent.com/p/AF1QipMr6n_xBW4p_K1ZlzFi3QaAGdHW9zQbm_5fMa7k=w464-h260-n-k-no"
+        },
+        {
+            id:2,
+            title:"Carlevana Winery, Anenii Noissas",
+            subTitle:"Carlevana Winery",
+            description:"Carlevana Winery is one of the most promising companies in the wine branch of the Republic of Moldova, which enjoys a dynamic development, ",
+            image:"https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRKZfLRZoSdSumS3n-8FG5iPsfUtxtob2crwhU0Ir5Ih2dsme81fpc0Mbh32soDwkqm0ssRrjqCE7JQVL8kX2K__Q"
+        },
+
+    ];
     let id = query.id;
     return (
         <div className={"mt-24 ml-10"}>
@@ -57,6 +77,13 @@ export default function () {
                 name={districts[id].title}
                 title={districts[id].title}
                 description={districts[id].description}
+            />
+
+            <TouristicsPlaces
+                title={Places[2].title}
+                subTitle={Places[2].subTitle}
+                description={Places[2].description}
+                image={Places[2].image}
             />
 
         </div>
