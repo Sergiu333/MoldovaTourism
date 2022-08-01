@@ -48,7 +48,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className="mr-3" >
-                        <Link href="/projects">
+                        <Link href="/page">
                             <a className="inline-block py-2 px-4 text-gray-900 font-bold no-underline">{t("common:menu-projects")}</a>
                         </Link>
                     </li>
