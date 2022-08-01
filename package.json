@@ -19,6 +19,7 @@
     "next-translate": "^1.2.0",
     "react-bootstrap": "^2.1.1",
     "react-responsive-carousel": "^3.2.22",
+    "scss": "^0.2.4",
     "tailwind": "^4.0.0",
     "tw-elements": "^1.0.0-alpha9"
   },
