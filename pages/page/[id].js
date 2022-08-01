@@ -1,6 +1,6 @@
 import {useRouter} from 'next/router'
 import Link from "next/link";
-import District_content from "../../components/district_content";
+import DistrictContent from "../../components/districtContent";
 
 export default function () {
     const {query} = useRouter();
@@ -53,7 +53,7 @@ export default function () {
     return (
         <div className={"mt-24 ml-10"}>
 
-            <District_content
+            <DistrictContent
                 name={districts[id].title}
                 title={districts[id].title}
                 description={districts[id].description}

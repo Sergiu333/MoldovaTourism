@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function District_content(props) {
+export default function DistrictContent(props) {
 
     return (
             <section>
