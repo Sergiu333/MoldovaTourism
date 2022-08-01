@@ -6,7 +6,7 @@ export default function () {
 
     let districts  = [
         { id: 0, nr:"", title: "", description: ""}, // is default , is required (pentru cei care nu inteleg engleza <<el trebuie>>)
-        { id: 1, nr:"MD-AN", title: "anenii noi", description: "ceva " },
+        { id: 1, nr:"MD-AN", title: "anenii noi", description: "Right. Say that again. No, no, George, look, it's just an act, right? Okay, so 9:00 you're strolling through the parking lot, you see us struggling in the car, you walk up, you open the door and you say, your line, George. Stop it. We're gonna take a little break but we'll be back in a while so, don't nobody go no where." },
         { id: 2, nr:"MD-BA" , title: "balti", description: "ceva " },
         { id: 3, nr:"MD-BD" , title: "tichina", description: "ceva " },
         { id: 4, nr:"MD-BR" , title: "Briceni", description: "ceva " },
@@ -45,13 +45,30 @@ export default function () {
     ];
     let id = query.id;
     return(
-        <div className={"mt-96 ml-10"}>
-            <Link href={`/page/`}>
-                <a>inapoi la page</a>
-            </Link>
-            <h1>aici sunt afisate datele user cu id : {query.id}</h1>
-            <h1>Localitatea- {districts[id].title}</h1>
-            <h1>Descrierea- {districts[id].description}</h1>
+        <div className={"mt-24 ml-10"}>
+            {/*<Link href={`/page/`}>*/}
+            {/*    <a>inapoi la page</a>*/}
+            {/*</Link>*/}
+            {/*<h1>aici sunt afisate datele user cu id : {query.id}</h1>*/}
+            <style jsx>
+                {`
+           .sub{
+            font-family: 'Nunito Sans';
+           }
+        `}</style>
+
+            <section>
+                <div className=" flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div className="flex flex-col w-full max-w-5xl mx-auto prose text-left prose-blue">
+                        <div className="w-full mx-auto">
+                            <b className={"text-5xl"}>Bine ati venit in vizita la <b>{districts[id].title}</b>.</b>
+                            <div className={"text-2xl mt-10"}>Localitatea <b>{districts[id].title}</b> .</div>
+                            <div className={"mt-4"}>{districts[id].description}</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     )
 };
