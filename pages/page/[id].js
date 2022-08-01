@@ -50,10 +50,6 @@ export default function () {
             {/*    <a>inapoi la page</a>*/}
             {/*</Link>*/}
             {/*<h1>aici sunt afisate datele user cu id : {query.id}</h1>*/}
-            {/*<h1>Localitatea- {districts[id].title}</h1>*/}
-            {/*<h1>Descrierea- {districts[id].description}</h1>*/}
-
-            {/*font-family: 'Nunito Sans';*/}
             <style jsx>
                 {`
            .sub{
